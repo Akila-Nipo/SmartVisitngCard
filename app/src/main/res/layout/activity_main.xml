@@ -1,0 +1,203 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#282828"
+    android:orientation="vertical">
+
+    <!-- Profile Picture (Circular with Golden Border) -->
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dp_prof"
+        android:background="@drawable/circular_image_border"
+        android:clipToOutline="true"
+        android:layout_margin="50dp" />
+
+    <!-- Colorful Bar Above Name and Job Title -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/ffd700" />
+
+    <!-- Name and Job Title -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akila Nipo"
+            android:textSize="32sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/job_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Software Engineer"
+            android:textColor="#D3D3D3"
+        android:textSize="24sp"
+        android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Colorful Bar Below Name and Job Title -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/ffd700" />
+
+    <!-- Contact Information Icons -->
+    <LinearLayout
+        android:id="@+id/contact_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <!-- Phone Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/phone_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/dilaer"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Phone" />
+
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+8801785482292"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Email Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/email_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/gmail"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Email" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="akila.stu2019@juniv.edu"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- LinkedIn Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/linkedin_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/linkedin"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="LinkedIn" />
+
+            <TextView
+                android:id="@+id/linkedin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Akila Nipo"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- WhatsApp Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/whatsapp_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/whatsapp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="WhatsApp" />
+
+            <TextView
+                android:id="@+id/whatsapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+8801785482292"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- GitHub Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/github_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/github"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="GitHub" />
+
+            <TextView
+                android:id="@+id/github"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="github.com/AkilaNipo"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Facebook Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/facebook_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/fb"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Facebook" />
+
+            <TextView
+                android:id="@+id/facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="facebook.com/Akila Nipo"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

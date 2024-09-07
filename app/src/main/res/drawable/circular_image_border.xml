@@ -1,0 +1,9 @@
+<!-- res/drawable/circular_image_border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Inner background color -->
+    <stroke
+        android:width="4dp"
+        android:color="#FFD700" /> <!-- Golden border -->
+    <corners android:radius="100dp" /> <!-- Adjust radius to half of ImageView size -->
+</shape>
+
